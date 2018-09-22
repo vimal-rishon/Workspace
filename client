@@ -21,3 +21,6 @@ public static void main (String []args) {
        }
     }
 }
+
+
+// sample codes for client side access. 
