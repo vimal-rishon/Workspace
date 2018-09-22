@@ -1,0 +1,23 @@
+import java.net.*;
+import java.io.*;
+
+public class Client {
+public static void main (String []args) {
+   try {
+        Socket s = new Socket("192.168.1.213", 1996);
+        DataOutputStream dos = new DataOutputStream(s.getOutputStream());
+        dos.writeUTF("If procrastination was a sport, I would compete in it later.");
+       } catch (IOException ie) {
+         ie.printStackTrace();
+         File folder = new File("/home/vimal/Documents");
+         if ( folder.isDirectory() == true ) {
+         	File[] docList = folder.listFiles();
+         	if ( docList != null ) {
+         		for ( File doc : docList ) {
+         			
+         		}
+         	}
+         }
+       }
+    }
+}
